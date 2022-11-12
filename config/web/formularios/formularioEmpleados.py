@@ -27,7 +27,7 @@ class FormularioEmpleados(forms.Form):
         widget=forms.Select(attrs={'class':'form-control mb-3'}),
         choices=CARGOS
     )
-    Salario=forms.CharField(
+    salario=forms.CharField(
         required=True,
         max_length=8,
         widget=forms.NumberInput(attrs={'class':'form-control mb-3'})
